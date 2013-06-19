@@ -1,0 +1,93 @@
+/* Stretch vertically */
+html, body { height: 100%; }
+ 
+body {
+  background: radial-gradient(ellipse at center, rgba(231,76,60,1) 0%,rgba(192,57,43,1) 100%);
+  color: #fff;
+  font-family: MozTT, sans-serif;
+ 
+  /* Reset base size */
+  font-size: 16px;
+ 
+  /* Set font size relative to base size */
+  /* Check <a href="http://snook.ca/archives/html_and_css/font-size-with-rem">this</a> article on rem usage */
+  font-size: 1.4rem;
+ 
+  font-weight: 300;
+ 
+  /* Remove spacing */
+  margin: 0;
+}
+ 
+h1, h2, h3, h4, h5, h6 { font-weight: 300; }
+ 
+h1 { font-size: 3rem; }
+ 
+a {
+  color: #FFA49E;
+  text-decoration: none;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.3);
+}
+a:hover { color: #fff; }
+ 
+input, button, select, textarea {
+  border-radius: 0;
+  box-shadow: none;
+}
+input[type=text], textarea, select {
+  border: none;
+  font-family: MozTT, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding: .7rem .8rem;
+}
+
+/* All views have region role so selecting them with attribute selector  */
+[role=region] {
+  background: radial-gradient(ellipse at center, rgba(231,76,60,1) 0%,rgba(192,57,43,1) 100%);
+ 
+  /* Stretch both vertically/horizontally */
+  top: 0; right: 0; bottom: 0; left: 0;
+ 
+  position: fixed;
+  overflow-x: hidden;
+}
+[role=region] > header {
+  margin: .5rem 0 1rem 0;
+  text-align: center;
+}
+[role=region] > header > h1 {
+  margin: 0;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.4);
+}
+[role=region] > .view-content {
+  margin: 0 1rem 4rem 1rem;
+}
+[role=region] > footer {
+  background: rgba(0,0,0,.2);
+  right: 0; bottom: 0; left: 0;
+  position: fixed;
+  text-align: center;
+}
+[role=region] > footer > menu[role=toolbar] {
+  margin: 0;
+  padding: 0;
+}
+
+menu[role=toolbar] > [role=menuitem] {
+  border: none;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+menu[role=toolbar] > [role=menuitem] > span {
+  display: none;
+}
+menu[role=toolbar] > [role=menuitem]:disabled {
+  opacity: .2;
+}
+menu[role=toolbar] > [role=menuitem]:hover {
+  background-color: rgba(255,255,255,.1);
+}
+menu[role=toolbar] > .btn-done {
+  background: url(../img/check.svg) no-repeat center center;
+}

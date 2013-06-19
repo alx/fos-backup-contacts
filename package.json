@@ -1,0 +1,9 @@
+{
+  "amd": {},
+  "volo": {
+    "baseUrl": "www/js/lib",
+    "dependencies": {
+      "jquery": "github:jquery/jquery/2.0.2"
+    }
+  }
+}
