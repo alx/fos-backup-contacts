@@ -17,6 +17,7 @@
   "default_locale": "en",
   "type": "privileged",
   "permissions": {
-    "contacts": { "access": "readonly" }
+    "contacts": { "access": "readonly" },
+    “device-storage:sdcard”:{ “access”: “readwrite” }
   }
 }
