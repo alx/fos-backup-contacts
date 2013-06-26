@@ -14,11 +14,10 @@
   },
   "csp": "default-src *; script-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline'",
   "installs_allowed_from": ["*"],
-  "appcache_path": "/cache.manifest",
   "default_locale": "en",
   "type": "privileged",
   "permissions": {
-    "contacts": { "access": "readonly" },
-    "device-storage:sdcard":{ "access": "readwrite" }
+    "contacts": { "access": "readonly", "description": "Import contacts to save them on sdcard" },
+    "device-storage:sdcard":{ "access": "readwrite", "description": "Save contacts in a vcf file on sdcard"}
   }
 }
