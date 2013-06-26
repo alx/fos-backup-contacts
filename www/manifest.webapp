@@ -18,6 +18,6 @@
   "type": "privileged",
   "permissions": {
     "contacts": { "access": "readonly" },
-    “device-storage:sdcard”:{ “access”: “readwrite” }
+    "device-storage:sdcard":{ "access": "readwrite" }
   }
 }
