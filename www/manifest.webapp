@@ -4,8 +4,7 @@
   "description": "Awesome contact backup app by alx",
   "launch_path": "/index.html",
   "icons": {
-    "16": "/img/icons/icon-16.png",
-    "48": "/img/icons/icon-48.png",
+    "60": "/img/icons/icon-60.png",
     "128": "/img/icons/icon-128.png"
   },
   "developer": {
