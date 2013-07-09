@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "name": "Contacts Backup",
+  "name": "Con Backup",
   "description": "Awesome contact backup app by alx",
   "launch_path": "/index.html",
   "icons": {
