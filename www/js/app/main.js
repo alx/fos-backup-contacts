@@ -122,6 +122,7 @@ define(['jquery', 'sdcard'], function ($) {
 
     var filename = "fos-contact-backup.vcf";
     var sdcard = navigator.getDeviceStorage("sdcard");
+    
     var request = sdcard.delete(filename);
     var file = new Blob([vcard], {type: "text/plain"});
     var request = sdcard.addNamed(file, filename);
@@ -132,6 +133,7 @@ define(['jquery', 'sdcard'], function ($) {
     }
 
     // An error typically occur if a file with the same name already exist
+    // TODO An error may occur if the phone is plugged in, as the SD card is then shared and cannot be written to.
     request.onerror = function () {
       alert('Unable to write the file: ' + this.error.name);
     }
