@@ -4,6 +4,8 @@ This Firefox OS app will allow you to save your contact database in a .vcf file 
 
 With this backup file, you'll be able to re-import your contacts if you lost them, or if you flash your device.
 
+18/07/2013: The app is now on the Marketplace: https://marketplace.firefox.com/app/contacts-backup/
+
 19/06/2013: this is my first Firefox OS app, based on the Mozilla Hacks blog Todo article. It currently can browse contact but not save them to the sdcard.
 
 If you can help, some hints on how to write content on sdcard would help a lot :)
