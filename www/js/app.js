@@ -1,3 +1,12 @@
+/*
+* Firefox OS Backup Contacts
+* https://github.com/alx/fos-backup-contacts
+*
+* Copyright (c) 2013 Alexandre Girard
+* Licensed under the MIT licenses.
+* http://mit-license.org/
+*/
+
 // For any third party dependencies, like jQuery, place them in the lib folder.
 
 // Configure loading modules from the lib directory,

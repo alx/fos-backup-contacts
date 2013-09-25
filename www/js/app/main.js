@@ -1,3 +1,12 @@
+/*
+* Firefox OS Backup Contacts
+* https://github.com/alx/fos-backup-contacts
+*
+* Copyright (c) 2013 Alexandre Girard
+* Licensed under the MIT licenses.
+* http://mit-license.org/
+*/
+
 define(['jquery', 'sdcard'], function ($) {
 
   var updateStatus = function(status) {
